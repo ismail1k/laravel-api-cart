@@ -8,6 +8,6 @@ class WishlistFacade extends Facade {
 
     protected static function getFacadeAccessor()
     {
-        return 'services.wishlist';
+        return 'services/wishlist';
     }
 }
