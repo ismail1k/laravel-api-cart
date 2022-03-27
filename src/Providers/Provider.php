@@ -4,7 +4,7 @@ namespace Ismail1k\LaravelApiCart\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class CartServiceProvider extends ServiceProvider
+class Provider extends ServiceProvider
 {
     /**
      * Register services.
