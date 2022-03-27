@@ -14,7 +14,7 @@ class CartServiceProvider extends ServiceProvider
     public function register()
     {
         $this->publishes([
-            __DIR__.'/../database/migrations/' => database_path('migrations'),
+            __DIR__.'/database/migrations/' => database_path('migrations'),
         ]);
         dd('Cart register!');
     }
