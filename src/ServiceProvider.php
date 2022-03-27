@@ -1,10 +1,10 @@
 <?php
 
-namespace Ismail1k\LaravelApiCart\Providers;
+namespace Ismail1k\LaravelApiCart;
 
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider as Provider;
 
-class Provider extends ServiceProvider
+class ServiceProvider extends Provider
 {
     /**
      * Register services.
@@ -14,10 +14,10 @@ class Provider extends ServiceProvider
     public function register()
     {
         $this->app->bind('cart', function(){
-            return new Cart;
+            return new Services\Cart;
         });
         $this->app->bind('wishlist', function(){
-            return new Wishlist;
+            return new Services\Wishlist;
         });
         $this->publishes([
             __DIR__.'/../database/migrations/' => database_path('migrations'),
