@@ -12,7 +12,10 @@
         "laravel": {
             "providers": [
                 "Ismail1k\\LaravelApiCart\\CartServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "Cart": "Ismail1k\\LaravelApiCart\\Facade"
+            }
         }
     },
     "authors": [

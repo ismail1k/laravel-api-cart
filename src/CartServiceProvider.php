@@ -13,6 +13,12 @@ class CartServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->app->bind('cart', function(){
+            return new Cart;
+        });
+        $this->app->bind('wishlist', function(){
+            return new Wishlist;
+        });
         $this->publishes([
             __DIR__.'/../database/migrations/' => database_path('migrations'),
         ]);
