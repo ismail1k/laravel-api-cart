@@ -8,11 +8,9 @@ composer require "ismail1k/laravel-api-cart"
 ```
 then add these follow lines to `config/app.php`:
 ```php
-  'providers' => [
-      Ismail1k\LaravelApiCart\CartServiceProvider::class,
-  ],
   'aliases' => [
       'Cart' => Ismail1k\LaravelApiCart\CartServiceProvider::class,
+      'Wishlist' => Ismail1k\LaravelApiCart\Facades\CartFacade::class,
   ],
 ```
 Next step, add some published files like migrations: 
