@@ -9,3 +9,7 @@ then add the follow line to `providers` in `config/app.php`:
 ```php
 Ismail1k\LaravelApiCart\CartServiceProvider::class,
 ```
+Next step, add some published files like migrations: 
+```shell
+php artisan vendor:publish --provider="Ismail1k\LaravelApiCart\CartServiceProvider"
+```
