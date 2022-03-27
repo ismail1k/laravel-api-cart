@@ -1,8 +1,8 @@
 # laravel-api-cart
-A simple Shopping Cart system for e-commerce projects. Compatible with Laravel API.
+A simple Shopping Cart system for e-commerce projectsc Compatible with Laravel API.
 
 ## Installation
-First, add `ismail1k/laravel-api-cart` package to your Laravel project using Composer:
+First, add `ismail1k/laravel-api-cart` package to your laravel project using Composer:
 ```shell
 composer require "ismail1k/laravel-api-cart"
 ```

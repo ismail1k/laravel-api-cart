@@ -1,6 +1,6 @@
 <?php
 
-namespace Ismail1k\LaravelApiCart;
+namespace Ismail1k\LaravelApiCart\Services;
 
 class Wishlist
 {

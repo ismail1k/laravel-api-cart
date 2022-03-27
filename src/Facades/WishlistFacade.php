@@ -8,6 +8,6 @@ class CartFacade extends Facade {
 
     protected static function getFacadeAccessor()
     {
-        return 'wishlist';
+        return 'services.wishlist';
     }
 }

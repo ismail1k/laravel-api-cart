@@ -11,7 +11,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Ismail1k\\LaravelApiCart\\CartServiceProvider"
+                "Ismail1k\\LaravelApiCart\\Providers\\CartServiceProvider"
             ],
             "aliases": {
                 "Cart": "Ismail1k\\LaravelApiCart\\Facade"
