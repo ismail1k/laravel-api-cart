@@ -1,0 +1,28 @@
+{
+    "name": "ismail1k/laravel-api-cart",
+    "description": "A simple laravel shopping cart for e-commerce store, Compatible with laravel api.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ismail1k\\LaravelApiCart\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ismail1k\\LaravelApiCart\\CartServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "ismail1k",
+            "email": "oneigcy@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2.0"
+    }
+}
