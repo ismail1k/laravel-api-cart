@@ -14,7 +14,8 @@
                 "Ismail1k\\LaravelApiCart\\Providers\\CartServiceProvider"
             ],
             "aliases": {
-                "Cart": "Ismail1k\\LaravelApiCart\\Facade"
+                "Cart": "Ismail1k\\LaravelApiCart\\Facades\\CartFacade",
+                "Wishlist": "Ismail1k\\LaravelApiCart\\Facades\\WishlistFacade"
             }
         }
     },
