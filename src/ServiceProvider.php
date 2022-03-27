@@ -14,10 +14,10 @@ class ServiceProvider extends Provider
     public function register()
     {
         $this->app->bind('cart', function(){
-            return new Services\Cart;
+            return new Facades\Cart;
         });
         $this->app->bind('wishlist', function(){
-            return new Services\Wishlist;
+            return new Facades\Wishlist;
         });
         $this->publishes([
             __DIR__.'/../database/migrations/' => database_path('migrations'),
