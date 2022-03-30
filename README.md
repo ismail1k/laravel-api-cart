@@ -18,7 +18,7 @@ then add these follow lines to `config/app.php`:
 ```
 Next step, add some published files like migrations: 
 ```shell
-php artisan vendor:publish --provider="Ismail1k\LaravelCart\CartServiceProvider"
+php artisan vendor:publish --provider="Ismail1k\LaravelCart\ServiceProvider"
 ```
 then run the follow line:
 ```shell
