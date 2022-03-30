@@ -1,6 +1,6 @@
 <?php
 
-namespace Ismail1k\LaravelApiCart\Facades;
+namespace Ismail1k\LaravelCart\Facades;
 
 class Cart
 {
