@@ -1,21 +1,21 @@
 {
-    "name": "ismail1k/laravel-api-cart",
+    "name": "ismail1k/laravel-cart",
     "description": "A simple laravel shopping cart for e-commerce store, Compatible with laravel api.",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Ismail1k\\LaravelApiCart\\": "src/"
+            "Ismail1k\\LaravelCart\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Ismail1k\\LaravelApiCart\\ServiceProvider"
+                "Ismail1k\\LaravelCart\\ServiceProvider"
             ],
             "aliases": {
-                "Cart": "Ismail1k\\LaravelApiCart\\Facades\\CartFacade",
-                "Wishlist": "Ismail1k\\LaravelApiCart\\Facades\\WishlistFacade"
+                "Cart": "Ismail1k\\LaravelCart\\Facades\\CartFacade",
+                "Wishlist": "Ismail1k\\LaravelCart\\Facades\\WishlistFacade"
             }
         }
     },
