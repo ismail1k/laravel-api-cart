@@ -1,4 +1,4 @@
-# laravel-api-cart
+# laravel-cart
 A simple Shopping Cart system for e-commerce projectsc Compatible with Laravel API.
 
 ## Installation
