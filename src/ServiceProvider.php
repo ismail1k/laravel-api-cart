@@ -21,7 +21,7 @@ class ServiceProvider extends Provider
         });
         $this->publishes([
             __DIR__.'/../database/migrations/' => database_path('migrations'),
-        ]);
+        ], 'laravel-assets');
     }
 
     /**
