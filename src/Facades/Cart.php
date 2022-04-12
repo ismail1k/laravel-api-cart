@@ -64,18 +64,25 @@ class Cart
         return true;
     }
 
-    public function clear(){
-
+    public function clear($cart_id = null){
+        //Clear all items without destroy
+        $cart = DB::table('carts')->where('id', $cart_id)->first();
+        $items = DB::table('cart-items')->where('cart_id', $cart->id)->get();
+        foreach($items as $item){
+            DB::table('cart-items')->delete($item->id);
+        }
         return true;
     }
 
     public function destroy($cart_id = null){
-        $cart = DB::table('carts')->where('id', $cart_id)->get();
+        //Destroy cart
+        $cart = DB::table('carts')->where('id', $cart_id)->first();
         $items = DB::table('cart-items')->where('cart_id', $cart->id)->get();
         foreach($items as $item){
             DB::table('cart-items')->delete($item->id);
         }
         DB::table('carts')->delete($cart->id);
+        return true;
     }
 
 }
