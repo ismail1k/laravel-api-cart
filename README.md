@@ -13,7 +13,6 @@ then add these follow lines to `config/app.php`:
   ],
   'aliases' => [
       'Cart' => Ismail1k\LaravelCart\CartServiceProvider::class,
-      'Wishlist' => Ismail1k\LaravelCart\Facades\CartFacade::class,
   ],
 ```
 Next step, add some published files like migrations: 
