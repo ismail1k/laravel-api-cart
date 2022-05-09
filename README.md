@@ -26,3 +26,33 @@ php artisan migrate
 ```
 
 ## Usage
+Use class `Cart` using: 
+```php
+use Cart;
+```
+Select your cart with: 
+```php
+$cart = Cart::get($cart_token);
+```
+Or you can create new one with: 
+```php
+$cart = Cart::create($user_id = null);  //It by default null but if you want to link that created cart to a specified user, You can pass `user_id` parameter.
+```
+Add some product to your cart with:
+```php
+Cart::add($cart_token, $product_id, $quantity = 1); //The default quantity is 1, that means if you don't specify the quantity, 1 will be added automatically.
+```
+`Note:` For example, if you assign 3 to a product that already has 1 quantity, it will be 3, not 4.
+
+Remove one item from cart with:
+```php
+Cart::removeItem($product_id);
+```
+If you want to remove all products from the cart with a single action, you can do so with: 
+```php
+Cart:clear($cart_token);
+```
+Or you can destroy cart with:
+```php
+Cart::destroy($cart_token);
+```
