@@ -28,9 +28,9 @@ class Cart
         return false;
     }
     
-    public function create($user = null, $wishlist = 0){
+    public function create($user_id = null, $wishlist = 0){
         $cart = DB::table('carts')->insertGetId([
-            'user_id' => $user ? $user : null,
+            'user_id' => $user_id ? $user_id : null,
             'type' => $wishlist ? 'wishlist' : 'cart',
         ]);
         return $cart;
