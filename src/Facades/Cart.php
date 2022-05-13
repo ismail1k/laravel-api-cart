@@ -7,12 +7,12 @@ class Cart
 {
 
     public function get(String $cart_id = null){
-        if($cart = DB::table('carts')->where('id', $cart_id)->where('payed', false)->first()){
+        if($cart = DB::table('carts')->where('id', $cart_id)->first()){
             $prototype = [
                 'id' => $cart->id,
                 'items' => [],
             ];
-            $items = DB::table('cart-items')->where('cart_id', $cart->id)->get();
+            $items = DB::table('cart-items')->where('cart_id', $cart->id)->where('payed', false)->get();
             foreach($items as $item){
                 $product = DB::table('products')->where('id', $item->product_id)->first();
                 array_push($prototype['items'], (object)[
