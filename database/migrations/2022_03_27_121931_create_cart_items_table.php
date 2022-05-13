@@ -20,6 +20,7 @@ class CreateCartItemsTable extends Migration
             $table->unsignedBigInteger('product_id');
             $table->foreign('product_id')->references('id')->on('products');
             $table->integer('quantity');
+            $table->boolean('payed')->default(false);
             $table->timestamps();
         });
     }
