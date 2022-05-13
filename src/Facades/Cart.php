@@ -7,7 +7,7 @@ class Cart
 {
 
     public function get(String $cart_id = null){
-        if($cart = DB::table('carts')->where('id', $cart_id)->first()){
+        if($cart = DB::table('carts')->where('id', $cart_id)->where('payed', false)->first()){
             $prototype = [
                 'id' => $cart->id,
                 'items' => [],
