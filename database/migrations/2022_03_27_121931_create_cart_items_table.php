@@ -23,6 +23,10 @@ class CreateCartItemsTable extends Migration
             $table->boolean('payed')->default(false);
             $table->timestamps();
         });
+        Schema::table('skus', function (Blueprint $table) {
+            $table->unsignedBigInteger('sku_id')->nullable();
+            $table->foreign('sku_id')->references('id')->on('skus');
+        });
     }
 
     /**
@@ -32,6 +36,10 @@ class CreateCartItemsTable extends Migration
      */
     public function down()
     {
+        Schema::table('skus', function (Blueprint $table) {
+            $table->dropForeign('products_sku_id_foreign');
+            $table->dropColumn('sku_id');
+        });
         Schema::dropIfExists('cart-items');
     }
 }
