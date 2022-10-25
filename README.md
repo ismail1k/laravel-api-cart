@@ -41,7 +41,7 @@ Add some product to your cart with:
 ```php
 Cart::add($cart_token, $product_id, $quantity = 1); //The default quantity is 1, that means if you don't specify the quantity, 1 will be added automatically.
 ```
-`Note:` For example, if you assign 3 to a product that already has 1 quantity, it will be 3, not 4.
+`Note:` If you assign 2 to a product that already has 1 quantity, it will be 2, not 3.
 
 Remove one item from cart with:
 ```php
