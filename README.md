@@ -1,5 +1,5 @@
 # laravel-cart
-A simple Shopping Cart system for e-commerce projectsc Compatible with Laravel API.
+A simple Shopping Cart system for e-commerce projects for Laravel.
 
 ## Installation
 First, add `ismail1k/laravel-cart` package to your laravel project using Composer:
