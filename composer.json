@@ -1,6 +1,6 @@
 {
     "name": "ismail1k/laravel-cart",
-    "description": "A simple laravel shopping cart for e-commerce store, Compatible with laravel api.",
+    "description": "A simple Shopping Cart system for e-commerce projects for Laravel.",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -21,7 +21,7 @@
     },
     "authors": [
         {
-            "name": "ismail1k",
+            "name": "Ismail Andaloussi",
             "email": "oneigcy@gmail.com"
         }
     ],
